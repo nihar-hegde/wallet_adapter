@@ -10,6 +10,7 @@ import {
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { AirDrop } from "./components/AirDrop";
 import { UserBalance } from "./components/DisplayUserBalance";
+import { SendSol } from "./components/SendSOl";
 
 function App() {
   return (
@@ -25,10 +26,11 @@ function App() {
               <WalletMultiButton />
               <WalletDisconnectButton />
             </div>
-            <div>
+            <div className="flex flex-col items-center justify-center gap-2">
               <AirDrop />
+              <UserBalance />
+              <SendSol />
             </div>
-            <UserBalance />
           </main>
         </WalletModalProvider>
       </WalletProvider>
