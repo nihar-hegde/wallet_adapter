@@ -9,6 +9,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { AirDrop } from "./components/AirDrop";
+import { UserBalance } from "./components/DisplayUserBalance";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <div>
               <AirDrop />
             </div>
+            <UserBalance />
           </main>
         </WalletModalProvider>
       </WalletProvider>
